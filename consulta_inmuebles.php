@@ -46,19 +46,19 @@ if(!isset($_SESSION['login']) && !isset($_SESSION['loginEmpleado'])) {
 			    foreach($filas as $fila) {
 					echo $fila["ID_INMUEBLE"];
 		     ?>
-		    <form method="post" action="controlador_inmuebles.php">
+		    <!-- <form method="post" action="controlador_inmuebles.php">
 		    <div class="inmueble">
 			    <div class="nameBx">
 				    <img src="/images/casa.jpg" width="300px">
 			    </div>
 			    <div class="infoBx">
-				    <!-- <input id="ID_INMUEBLE" name="ID_INMUEBLE" type="hidden" value="<?php echo $fila["ID_INMUEBLE"]; ?>"/> -->
+				    <input id="ID_INMUEBLE" name="ID_INMUEBLE" type="hidden" value="<?php echo $fila["ID_INMUEBLE"]; ?>"/>
 				    <h2>Inmueble: <b><?php echo $fila["ID_INMUEBLE"]; ?></b></h2>
-				    <!-- <input id="DIRECCION" name="DIRECCION" type="hidden" value="<?php echo $fila["DIRECCION"]; ?>"/> -->
+				    <input id="DIRECCION" name="DIRECCION" type="hidden" value="<?php echo $fila["DIRECCION"]; ?>"/>
 				    <p>Direccion: <b><?php echo $fila["DIRECCION"]; ?></b></p>
-				    <!-- <input id="HABITACIONES" name="HABITACIONES" type="hidden" value="<?php echo $fila["HABITACIONES"]; ?>"/> -->
+				    <input id="HABITACIONES" name="HABITACIONES" type="hidden" value="<?php echo $fila["HABITACIONES"]; ?>"/>
 				    <p>Numero de habitaciones: <b><?php echo $fila["HABITACIONES"]; ?></b></p>
-				    <!-- <input id="TIPO" name="TIPO" type="hidden" value="<?php echo $fila["TIPO"]; ?>"/> -->
+				    <input id="TIPO" name="TIPO" type="hidden" value="<?php echo $fila["TIPO"]; ?>"/>
 				    <p>Tipo de inmueble: <b><?php echo $fila["TIPO"]; ?></b></p>
 
 				    <?php if(!isset($_SESSION['loginEmpleado'])){ ?>
@@ -72,7 +72,7 @@ if(!isset($_SESSION['login']) && !isset($_SESSION['loginEmpleado'])) {
 
 					<?php } ?>
                </div>
-		    </form>
+		    </form> -->
 				<?php } ?>
 			  </div>
         </div>
