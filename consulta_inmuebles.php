@@ -3,10 +3,8 @@ session_start();
 
 require_once ("gestionBD.php");
 require_once ("gestionarInmuebles.php");
-require_once ("gestionarEmpleados.php");
 
-
-if(!isset($_SESSION['login'])) {
+if(!isset($_SESSION['login']) || !isset($_SESSION['loginEmpleado'])) {
 	header("Location: login.php");
 } else {
 	if(isset($_SESSION["inmueble"])) {
@@ -37,7 +35,7 @@ if(!isset($_SESSION['login'])) {
         ?>
 
         <section class="contenido">
-	           <?php if($_SESSION["login"].in_array($admins)){ ?>
+	           <?php if(!isset($_SESSION['loginEmpleado'])){ ?>
 		            <div class="inserta">
 			              <h2><a href="registroInmueble.php"> INSERTAR INMUEBLE </a></h2>
 		            </div>
@@ -65,7 +63,7 @@ if(!isset($_SESSION['login'])) {
 				    <input id="TIPO" name="TIPO" type="hidden" value="<?php echo $fila["TIPO"]; ?>"/>
 				    <p>Tipo de inmueble: <b><?php echo $fila["TIPO"]; ?></b></p>
 
-				    <?php if($_SESSION["login"].in_array($admins)){ ?>
+				    <?php if(!isset($_SESSION['loginEmpleado'])){ ?>
 
 					    <?php if (isset($inmueble) and ($inmueble["ID_INMUEBLE"] == $fila["ID_INMUEBLE"])) { ?>
 						    <button id="grabar" name="grabar" type="submit" >Guardar </button>

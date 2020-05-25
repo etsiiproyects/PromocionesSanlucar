@@ -15,7 +15,7 @@
 
 		if($num_usuarios==0) $login='error';
 		else {
-			$_SESSION["login"] = $nombre;
+			$_SESSION["loginEmpleado"] = $nombre;
 			Header("Location: consulta_inmuebles.php");
 		}
 	}
