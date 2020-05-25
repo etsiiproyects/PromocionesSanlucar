@@ -15,7 +15,7 @@ if(!isset($_SESSION['login']) && !isset($_SESSION['loginEmpleado'])) {
     $conexion=crearConexionBD();
 
     $filas=consultarTodosInmuebles($conexion);
-
+	echo($filas);
     cerrarConexionBD($conexion);
 }
 ?>
