@@ -14,12 +14,12 @@ CREATE TABLE EMPLEADO (
 	OID_EMPLEADO INTEGER NOT NULL,
 	PRIMARY KEY (OID_EMPLEADO) );
 
-create table inmuebles (
-    id_inmueble varchar2(10)   not null,
-    direccion varchar2(50)  not null,
-    habitaciones integer,
-    tipo varchar2(13) check (tipo in ('aislado','plurifamiliar','comercial'))   not null,
-    primary key (id_inmueble));
+create table INMUEBLES (
+    ID_INMUEBLE VARCHAR2(10)   NOT NULL,
+    DIRECCION VARCHAR2(50) NOT NULL,
+    HABITACIONES INTEGER,
+    TIPO VARCHAR2(13) CHECK (TIPO in ('aislado','plurifamiliar','comercial'))   NOT NULL,
+    PRIMARY key (ID_INMUEBLE));
 
 create table ofertas (
     oid_o integer   not null,
