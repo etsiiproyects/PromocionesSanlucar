@@ -34,5 +34,7 @@ Insertar_oferta(350, sysdate,'03.1B');
 Insertar_oferta(350, sysdate,'03.1C');
 Insertar_oferta(375, sysdate,'04.1B');
 quitar_oferta(9);
+
+
 end;
 /
