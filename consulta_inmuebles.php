@@ -75,6 +75,7 @@ if(!isset($_SESSION['login'])) {
 					<?php } ?>
                </div>
 		    </form>
+			<?php } ?>
 			</div>
          </div>
          </section>
