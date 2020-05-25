@@ -9,4 +9,3 @@ function consultarEmpleado($conexion,$nombre,$pass) {
 	return $stmt->fetchColumn();
 }
 ?>
-?>
