@@ -13,7 +13,7 @@
 		$num_empleados = consultarEmpleado($conexion,$nombre,$pass);
 		cerrarConexionBD($conexion);
 
-		if($num_usuarios==0) $login='error';
+		if($num_usuarios>0) $login='error';
 		else {
 			$_SESSION["loginEmpleado"] = $nombre;
 			Header("Location: consulta_inmuebles.php");

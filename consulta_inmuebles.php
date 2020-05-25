@@ -4,7 +4,7 @@ session_start();
 require_once ("gestionBD.php");
 require_once ("gestionarInmuebles.php");
 
-if(!isset($_SESSION['login']) || !isset($_SESSION['loginEmpleado'])) {
+if(!isset($_SESSION['login']) && !isset($_SESSION['loginEmpleado'])) {
 	header("Location: login.php");
 } else {
 	if(isset($_SESSION["inmueble"])) {
@@ -82,7 +82,7 @@ if(!isset($_SESSION['login']) || !isset($_SESSION['loginEmpleado'])) {
 
 
 <?php
-	include_once("../footer.php");
+	include_once("footer.php");
 ?>
 
     </body>
