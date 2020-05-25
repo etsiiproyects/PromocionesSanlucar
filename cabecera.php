@@ -1,6 +1,6 @@
 <?php
 
-if(!isset($_SESSION["login"]) || !isset($_SESSION['loginEmpleado'])){
+if(!isset($_SESSION["login"]) && !isset($_SESSION['loginEmpleado'])){
 	?>
 	<nav class="naveg">
         <ul>
