@@ -1,5 +1,6 @@
 <?php
-
+$conexion=crearConexionBD();
+$admins=consultarTodosEmpleados($conexion);
 if(!isset($_SESSION["login"])){
 	?>
 	<nav class="naveg">
@@ -10,8 +11,7 @@ if(!isset($_SESSION["login"])){
         </ul>
     </nav>
 	<?php
-	$admins='SELECT NOMBRE FROM EMPLEADO '
-} else if($_SESSION['login']in $admins) {
+} else if(in_array($_SESSION['login'], $admins)) {
 		?>
 	<nav class="naveg">
         <ul>

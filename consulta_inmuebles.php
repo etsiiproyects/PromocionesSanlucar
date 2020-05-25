@@ -2,7 +2,9 @@
 session_start();
 
 require_once ("gestionBD.php");
-require_once ("gestionarInmubles.php");
+require_once ("gestionarInmuebles.php");
+require_once ("gestionarEmpleados.php");
+
 
 if(!isset($_SESSION['login'])) {
 	header("Location: login.php");
@@ -75,10 +77,10 @@ if(!isset($_SESSION['login'])) {
 					<?php } ?>
                </div>
 		    </form>
-			<?php } ?>
-			</div>
-         </div>
-         </section>
+				<?php } ?>
+			  </div>
+        </div>
+        </section>
 
 
 <?php

@@ -8,4 +8,10 @@ function consultarEmpleado($conexion,$nombre,$pass) {
 	$stmt->execute();
 	return $stmt->fetchColumn();
 }
+
+	function consultarTodosEmpleados($conexion) {
+		$consulta = "SELECT NOMBRE FROM EMPLEADO";
+    return $conexion->query($consulta);
+	}
+?>
 ?>
