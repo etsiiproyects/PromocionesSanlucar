@@ -43,8 +43,8 @@ if(!isset($_SESSION['login']) && !isset($_SESSION['loginEmpleado'])) {
 
 	    <div class="inmuebles">
 		    <?php
+			echo count($filas)
 			    foreach($filas as $fila) {
-					echo $fila["ID_INMUEBLE"];
 		     ?>
 		    <form method="post" action="controlador_inmuebles.php">
 		    <div class="inmueble">
