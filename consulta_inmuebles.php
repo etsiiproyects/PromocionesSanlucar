@@ -46,6 +46,21 @@ if(!isset($_SESSION['login']) && !isset($_SESSION['loginEmpleado'])) {
 			    foreach($filas as $fila) {
 					// echo $fila["ID_INMUEBLE"];
 		     ?>
+
+			 <div class="cabecera_id"><h1><?php echo $fila["ID_INMUEBLE"]; ?></h1> </div>
+			 <div class="info_inmueble">
+				 <h2>Direccion: <?php echo $fila["DIRECCION"]; ?> </h2>
+				 <h2>Numero de Habitaciones: <?php echo $fila["HABITACIONES"]; ?> </h2>
+				 <h2>Tipo de Inmueble: <?php echo $fila["TIPO"]; ?> </h2>
+			 </div>
+
+
+
+
+
+
+
+
 		    <!-- <form method="post" action="controlador_inmuebles.php">
 		    <div class="inmueble">
 			    <div class="nameBx">
