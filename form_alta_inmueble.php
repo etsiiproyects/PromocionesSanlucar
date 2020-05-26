@@ -53,7 +53,7 @@
 
          <div class="iniciosesion">
 
-     	     <a href="index.php"><img class="img-registro" src="../images/logo1.PNG" alt="Promociones Sanlúcar" /></a>
+     	     <a href="index.php"><img class="img-registro" src="images/logo.png" alt="Promociones Sanlúcar" /></a>
 
              <form id="altaInmueble" action="validacion_alta_inmueble.php" method="get">
                  <label for="id_inmueble">Identificador: </label>
@@ -67,7 +67,7 @@
                 <label for="habitaciones">Número de habitaciones: </label>
     			<input class="input-group" type="number" id="habitaciones" name="habitaciones" min="0" max="7" value="<?php echo $formulario['habitaciones'];?>" required />
     			<br />
-
+                
                 <label>Tipo inmueble:</label>
     				<label>
     					<input name="tipo" type="radio" value="AISLADO" <?php if($formulario['tipo']=='AISLADO') echo ' checked ';?>/>
@@ -79,6 +79,8 @@
     					<input name="tipo" type="radio" value="COMERCIAL" <?php if($formulario['tipo']=='COMERCIAL') echo ' checked ';?>/>
     					Comercial</label>
     				<br />
+
+                <input class="boton" type="submit" value="Confirmar" />
              </form>
 
         </div>
