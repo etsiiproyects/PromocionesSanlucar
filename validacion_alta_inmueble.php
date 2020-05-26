@@ -1,7 +1,7 @@
 <?php
 	session_start();
 
-    require_once("gestionarBD.php");
+  require_once("gestionBD.php");
 
 	if(isset($_SESSION["formulario"])) {
 		$nuevoInmueble["id_inmueble"] = $_REQUEST["id_inmueble"];
@@ -23,7 +23,7 @@
 		$_SESSION["errores"] = $errores;
 		Header('Location: form_alta_inmueble.php');
 	} else {
-		Header('Location: consulta_inmueble.php');
+		Header('Location: consulta_inmuebles.php');
 	}
 
 
@@ -32,7 +32,7 @@
 		//validadion del id
 		if($nuevoInmueble["id_inmueble"]=="") {
 			$errores[] = "<p>El ID del inmueble no puede estar vacío</p>";
-		} else if(strlen($nuevoInmueble["id_inmueble"])==5) {
+		} else if(strlen($nuevoInmueble["id_inmueble"])==4) {
 			$errores[] = "<p>ID no válido: debe tener 5 caracteres</p>";
 		}
 
@@ -42,7 +42,7 @@
 			$errores[] = "<p>El tipo debe ser PLURIFAMILIAR, COMERCIAL o AISLADO</p>";
 		}
 
-        if($nuevoUsuario["direccion"]==""){
+        if($nuevoInmueble["direccion"]==""){
 		$errores[] = "<p>La dirección no puede estar vacía</p>";
 
         return $errores;

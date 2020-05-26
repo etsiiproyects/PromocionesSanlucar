@@ -57,7 +57,7 @@
 
              <form id="altaInmueble" action="validacion_alta_inmueble.php" method="get">
                  <label for="id_inmueble">Identificador: </label>
-    			 <input class="input-group" id="id_inmueble" name="id_inmueble" type="text" placeholder="00.0A" pattern="^[0-9]{2}" title="Dos digitos, seguido de un punto un digito y otro digito o una letra" size="5" value="<?php echo $formulario['id_inmueble'];?>" required />
+    			 <input class="input-group" id="id_inmueble" name="id_inmueble" type="text" placeholder="00.0A" title="Dos digitos, seguido de un punto un digito y otro digito o una letra" size="5" value="<?php echo $formulario['id_inmueble'];?>" required />
     			<br/>
 
                 <label for="direccion">Direccion: </label>
@@ -67,7 +67,7 @@
                 <label for="habitaciones">Número de habitaciones: </label>
     			<input class="input-group" type="number" id="habitaciones" name="habitaciones" min="0" max="7" value="<?php echo $formulario['habitaciones'];?>" required />
     			<br />
-                
+
                 <label>Tipo inmueble:</label>
     				<label>
     					<input name="tipo" type="radio" value="AISLADO" <?php if($formulario['tipo']=='AISLADO') echo ' checked ';?>/>
@@ -80,7 +80,7 @@
     					Comercial</label>
     				<br />
 
-                <input class="boton" type="submit" value="Confirmar" />
+            <input class="boton" type="submit" value="Confirmar" />
              </form>
 
         </div>
