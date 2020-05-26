@@ -10,7 +10,7 @@ if(!isset($_SESSION["login"]) && !isset($_SESSION['loginEmpleado'])){
         </ul>
     </nav>
 	<?php
-} else if(!isset($_SESSION['loginEmpleado'])) {
+} else if(isset($_SESSION['loginEmpleado'])) {
 		?>
 	<nav class="naveg">
         <ul>
