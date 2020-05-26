@@ -10,8 +10,8 @@
 			$stmt=$conexion->prepare($consulta);
 			$stmt->bindParam(':id_inmueble', $inmueble["id_inmueble"]);
 			$stmt->bindParam(':direccion', $inmueble["direccion"]);
-			$stmt->bindParam(':habitaciones', $inmueble['habitaciones']);
-			$stmt->bindParam(':tipo', $inmueble['tipo']);
+			$stmt->bindParam(':habitaciones', $inmueble["habitaciones"]);
+			$stmt->bindParam(':tipo', $inmueble["tipo"]);
 
 			$stmt->execute();
 			return true;
