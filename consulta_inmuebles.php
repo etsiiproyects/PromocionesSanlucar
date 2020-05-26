@@ -24,7 +24,7 @@ if(!isset($_SESSION['login']) && !isset($_SESSION['loginEmpleado'])) {
     <head>
         <meta charset="utf-8">
         <title>Gestion De Promociones Sanlucar: Lista Inmuebles</title>
-        <link rel="stylesheet" type="text/css" href="css/consultaInmueble.css">
+        <link rel="stylesheet" type="text/css" href="css/prueba.css">
     </head>
     <body>
         <?php
@@ -87,8 +87,8 @@ if(!isset($_SESSION['login']) && !isset($_SESSION['loginEmpleado'])) {
 
 					<?php } ?>
                </div>
-		    </form> -->
-				<?php } ?>
+		    </form>
+				<?php } ?> -->
 			  </div>
         </div>
         </section>
