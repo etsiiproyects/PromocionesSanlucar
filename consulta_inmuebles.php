@@ -44,9 +44,9 @@ if(!isset($_SESSION['login']) && !isset($_SESSION['loginEmpleado'])) {
 	    <div class="inmuebles">
 		    <?php
 			    foreach($filas as $fila) {
-					echo $fila["ID_INMUEBLE"];
+					// echo $fila["ID_INMUEBLE"];
 		     ?>
-		    <form method="post" action="controlador_inmuebles.php">
+		    <!-- <form method="post" action="controlador_inmuebles.php">
 		    <div class="inmueble">
 			    <div class="nameBx">
 				    <img src="images/casa.jpg" width="300px">
@@ -72,7 +72,7 @@ if(!isset($_SESSION['login']) && !isset($_SESSION['loginEmpleado'])) {
 
 					<?php } ?>
                </div>
-		    </form>
+		    </form> -->
 				<?php } ?>
 			  </div>
         </div>
