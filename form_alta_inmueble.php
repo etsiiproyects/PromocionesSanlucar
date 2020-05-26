@@ -26,6 +26,8 @@
          <meta charset="utf-8">
          <title>Gestion Promociones Sanlucar: Alta Inmueble</title>
          <script src="js/validacion_cliente_alta_inmueble.js" type="text/javascript"></script>
+         <link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
      </head>
      <body>
 
@@ -37,8 +39,49 @@
              });
          </script>
 
+         <?php
 
+ 		if (isset($errores) && count($errores)>0) {
+ 	    	echo "<div id=\"div_errores\" class=\"error\">";
+ 			echo "<h4> Errores en el formulario:</h4>";
+     		foreach($errores as $error){
+     			echo $error;
+ 			}
+     		echo "</div>";
+   		}
+ 	     ?>
 
+         <div class="iniciosesion">
+
+     	     <a href="index.php"><img class="img-registro" src="../images/logo1.PNG" alt="Promociones Sanlúcar" /></a>
+
+             <form id="altaInmueble" action="validacion_alta_inmueble.php" method="get">
+                 <label for="id_inmueble">Identificador: </label>
+    			 <input class="input-group" id="id_inmueble" name="id_inmueble" type="text" placeholder="00.0A" pattern="^[0-9]{2}" title="Dos digitos, seguido de un punto un digito y otro digito o una letra" size="5" value="<?php echo $formulario['id_inmueble'];?>" required />
+    			<br/>
+
+                <label for="direccion">Direccion: </label>
+                <input class="input-group" id="direccion" name="direccion" type="text" size="60" value="<?php echo $formulario['direccion'];?>" required />
+                <br />
+
+                <label for="habitaciones">Número de habitaciones: </label>
+    			<input class="input-group" type="number" id="habitaciones" name="habitaciones" min="0" max="7" value="<?php echo $formulario['habitaciones'];?>" required />
+    			<br />
+
+                <label>Tipo inmueble:</label>
+    				<label>
+    					<input name="tipo" type="radio" value="AISLADO" <?php if($formulario['tipo']=='AISLADO') echo ' checked ';?>/>
+    					Aislado</label>
+    				<label>
+    					<input name="tipo" type="radio" value="PLURIFAMILIAR" <?php if($formulario['tipo']=='PLURIFAMILIAR') echo ' checked ';?>/>
+    					Plurifamiliar</label>
+    				<label>
+    					<input name="tipo" type="radio" value="COMERCIAL" <?php if($formulario['tipo']=='COMERCIAL') echo ' checked ';?>/>
+    					Comercial</label>
+    				<br />
+             </form>
+
+        </div>
 
 
 
