@@ -23,7 +23,7 @@
 		$_SESSION["errores"] = $errores;
 		Header('Location: form_alta_inmueble.php');
 	} else {
-		Header('Location: consulta_inmuebles.php');
+		Header('Location: accion_alta_inmuebles.php');
 	}
 
 
