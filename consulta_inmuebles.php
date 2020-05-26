@@ -53,7 +53,6 @@ if(!isset($_SESSION['login']) && !isset($_SESSION['loginEmpleado'])) {
 				 <h2>Numero de Habitaciones: <?php echo $fila["HABITACIONES"]; ?> </h2>
 				 <h2>Tipo de Inmueble: <?php echo $fila["TIPO"]; ?> </h2>
 			 </div>
-
 				<?php } ?>
 			  </div>
         </div>
