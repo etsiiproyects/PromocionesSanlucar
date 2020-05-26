@@ -67,16 +67,20 @@
                 <label for="habitaciones">Número de habitaciones: </label>
     			<input class="input-group" type="number" id="habitaciones" name="habitaciones" min="0" max="7" value="<?php echo $formulario['habitaciones'];?>" required />
     			<br />
-
+                <!-- <select name="tipo" id="tipo">
+                    <option value="aislado">Aislado</option>
+                    <option value="plurifamiliar">Plurifamiliar</option>
+                    <option value="comercial">Comercial</option>
+                </select> -->
                 <label>Tipo inmueble:</label>
     				<label>
-    					<input name="tipo" type="radio" value="AISLADO" <?php if($formulario['tipo']=='AISLADO') echo ' checked ';?>/>
+    					<input name="tipo" type="radio" value="aislado" <?php if($formulario['tipo']=='aislado') echo ' checked ';?>/>
     					Aislado</label>
     				<label>
-    					<input name="tipo" type="radio" value="PLURIFAMILIAR" <?php if($formulario['tipo']=='PLURIFAMILIAR') echo ' checked ';?>/>
+    					<input name="tipo" type="radio" value="plurifamiliar" <?php if($formulario['tipo']=='plurifamiliar') echo ' checked ';?>/>
     					Plurifamiliar</label>
     				<label>
-    					<input name="tipo" type="radio" value="COMERCIAL" <?php if($formulario['tipo']=='COMERCIAL') echo ' checked ';?>/>
+    					<input name="tipo" type="radio" value="comercial" <?php if($formulario['tipo']=='comercial') echo ' checked ';?>/>
     					Comercial</label>
     				<br />
 
