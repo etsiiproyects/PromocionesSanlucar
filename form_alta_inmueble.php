@@ -25,9 +25,22 @@
      <head>
          <meta charset="utf-8">
          <title>Gestion Promociones Sanlucar: Alta Inmueble</title>
-          <script src="js/validacion_cliente_alta_inmueble.js" type="text/javascript"></script>
+         <script src="js/validacion_cliente_alta_inmueble.js" type="text/javascript"></script>
      </head>
      <body>
+
+         <script type="text/javascript">
+             $(document).ready(function() {
+                 $("#altaInmueble").on("submit", funtion() {
+                     return validateForm();
+                 });
+             });
+         </script>
+
+
+
+
+
 
      </body>
  </html>
