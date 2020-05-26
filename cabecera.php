@@ -30,7 +30,7 @@ if(!isset($_SESSION["login"]) && !isset($_SESSION['loginEmpleado'])){
 
             <li><a href="desconectar.php">Cerrar sesión</a></li>
             <li><a href="perfil.php">Usuario</a></li>
-            <li><a href="../empleados/consulta_inmuebles.php">Inmuebles</a></li>
+            <li><a href="consulta_inmuebles.php">Inmuebles</a></li>
 
         </ul>
     </nav>

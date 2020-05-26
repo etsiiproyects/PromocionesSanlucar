@@ -32,7 +32,7 @@ if(!isset($_SESSION['login']) && !isset($_SESSION['loginEmpleado'])) {
         ?>
 
         <section class="contenido">
-	           <?php if(!isset($_SESSION['loginEmpleado'])){ ?>
+	           <?php if(isset($_SESSION['loginEmpleado'])){ ?>
 		            <div class="inserta">
 			              <h2><a href="registroInmueble.php"> INSERTAR INMUEBLE </a></h2>
 		            </div>
