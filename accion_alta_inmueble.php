@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    require_once("gestionBD");
+    require_once("gestionBD.php");
     require_once("gestionarInmuebles.php");
 
     if(isset($_SESSION["formulario"])) {

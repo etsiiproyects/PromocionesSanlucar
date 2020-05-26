@@ -6,7 +6,7 @@
 
 	function alta_inmueble($conexion, $inmueble) {
 		try {
-			$consulta="CALL INSERTAR_INMUEBLE(:id_inmueble, :direccion, :habitaciones, :tipo)");
+			$consulta="CALL INSERTAR_INMUEBLE(:id_inmueble, :direccion, :habitaciones, :tipo)";
 			$stmt=$conexion->prepare($consulta);
 			$stmt->bindParam(':id_inmueble', $inmueble["id_inmueble"]);
 			$stmt->bindParam(':direccion', $inmueble["direccion"]);
