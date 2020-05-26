@@ -23,13 +23,8 @@
     <body>
         <main>
 		<?php
-			if(alta_inmueble($conexion, $nuevoInmueble)) {
-		?>
-			<h1>El inmueble con ID <?php echo $nuevoInmueble["id_inmueble"]; ?> registrado con éxito</h1>
-			<div >
-				Pulsa <a href="consulta_inmuebles.php">aquí</a> para acceder a la lista de los inmuebles.
-			</div>
-		<?php } else { ?>
+			if(alta_inmueble($conexion, $nuevoInmueble)) Header("Location: consulta_inmuebles.php");
+		 } else { ?>
 			<h1>El inmueble ya existe en la base de datos.</h1>
 			<div >
 				Pulsa <a href="form_alta_inmueble.php">aquí</a> para volver al formulario.
