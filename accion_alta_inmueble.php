@@ -32,7 +32,7 @@
 		<?php } else { ?>
 			<h1>El inmueble ya existe en la base de datos.</h1>
 			<div >
-				Pulsa <a href="registroInmueble.php">aquí</a> para volver al formulario.
+				Pulsa <a href="form_alta_inmueble.php">aquí</a> para volver al formulario.
 			</div>
 		<?php } ?>
 

@@ -12,7 +12,7 @@
         $_SESSION["formulario"] = $nuevoInmueble;
 
 	} else {
-		Header("Location: registroInmueble.php");
+		Header("Location: form_alta_inmueble.php");
 	}
 
     $conexion=crearConexionBD();
